@@ -1,8 +1,8 @@
 # Magic Mirror Module: MPR121 
 
-This a module for [Magic Mirror²](https://github.com/MichMich/MagicMirror) to act based on touch-button controller MPR121
-It is capable of connecting multiple buttons at once, which can be individually configured.
-It's heavily based on the [MMM-Buttons module] (https://github.com/Jopyth/MMM-Buttons)
+This a module for [Magic Mirror²](https://github.com/MichMich/MagicMirror) to act based on touch (capacitive) buttons via the MPR121 touch-button controller.
+It is capable of connecting up to 11 buttons, which can be individually configured.
+This module heavily based on the awesome [MMM-Buttons module] (https://github.com/Jopyth/MMM-Buttons)
 
 This module sends out notifications to other modules.
 
