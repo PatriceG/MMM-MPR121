@@ -1,0 +1,32 @@
+{
+  "name": "Magic-Mirror-Module-MPR121",
+  "version": "1.0.0",
+  "description": "A module for connecting a MPR121 touch controller.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatriceG/MMM-MPR121"
+  },
+  "keywords": [
+    "magic mirror",
+    "smart mirror",
+    "buttons",
+    "touch",
+    "module"
+  ],
+  "author": "Patrice Godard",
+  "contributors": "git+https://github.com/PatriceG/MMM-MPR121/graphs/contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "git+https://github.com/PatriceG/MMM-MPR121/issues"
+  },
+  "homepage": "git+https://github.com/PatriceG/MMM-MPR121#readme",
+  "scripts": {
+    "postinstall": "node_modules/.bin/electron-rebuild -e ../../node_modules/electron"
+  },
+  "dependencies": {
+    "adafruit-mpr121":"latest"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.2.1"
+  }
+}
