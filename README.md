@@ -1,4 +1,4 @@
-# Magic Mirror Module: Buttons
+# Magic Mirror Module: MPR121 
 
 This a module for [Magic Mirror²](https://github.com/MichMich/MagicMirror) to act based on touch-button controler MPR121
 It is capable of connecting multiple buttons at once, which can be individually configured.
@@ -18,16 +18,16 @@ Clone this repository in your `modules` folder, and install dependencies:
 cd ~/MagicMirror/modules # adapt directory if you are using a different one
 git clone https://github.com/PatriceG/MMM-MPR121.git
 cd MMM-MPR121
-npm install # this can take a while
+npm install
 ```
 
 ## Configuration
 
 Add the module to your modules array in your `config.js`.
 
-Below is a simple example (needs [Remote Control](https://forum.magicmirror.builders/topic/735/remote-control-shutdown-configure-and-update-your-magicmirror) installed), with two buttons conneted, on pins 24 and 25.
-One switches on the display on a short press, and switches it off on a long press.
-The other does not do anything on a short press, but shuts down the system after keeping it pressed for 3 seconds with an explanatory user alert.
+Below is a simple example (needs [Remote Control](https://forum.magicmirror.builders/topic/735/remote-control-shutdown-configure-and-update-your-magicmirror) installed), with two touch-buttons (electrodes) conneted, on inputs 0 and 1 of the MPR121.
+One switches on the display on a short touch, and switches it off on a long touch.
+The other does not do anything on a short touch, but shuts down the system after keeping it touched for 3 seconds with an explanatory user alert.
 ```
 {
     module: 'MMM-MPR121',
@@ -78,7 +78,7 @@ Each button configuration is an object with the following properties:
 
 | Property      | Description   |
 | ------------- | ------------- |
-| `pin` | Pin number of the button input on the MPR121 (0 to 11)
+| `pin` | Input pin number of the button input on the MPR121 (0 to 11)
 | `name` | Name of the button for easier identification and log output. |
 | `longPress` | Choose what notification to send on a long press. See [Notification Configuration](README.md#Notification-Configuration) below. Use `undefined` if nothing should trigger. |
 | `shortPress` | Choose what notification to send on a short press. See [Notification Configuration](README.md#Notification-Configuration) below. Use `undefined` if nothing should trigger. |
