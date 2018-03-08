@@ -20,6 +20,10 @@ git clone https://github.com/PatriceG/MMM-MPR121.git
 cd MMM-MPR121
 npm install
 ```
+**Note:** On some installations you may need to use this command instead:
+```bash
+npm install --unsafe-perm
+```
 
 ## Configuration
 
